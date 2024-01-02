@@ -576,3 +576,40 @@ footer {
 	height: 50px;
 	color: white;
 }
+/***************************LISTE************************/
+ul.fruit {
+	list-style: none;
+}
+ul.fruit li {
+	display: inline;
+	margin: 15px;
+}
+li .fa {
+	font-size: 90%;
+	color: blue;
+}
+li .fa:hover {
+	font-size: 150%;
+	color: darkred;
+}
+.imbriquee,
+.imbriquee ul {
+	padding-left: 15px;
+}
+.imbriquee {
+	cursor: pointer;
+}
+.imbriquee ul {
+	display: none;
+}
+.europe:hover ul,
+.asie:hover ul {
+	display: block;
+}
+.imbriquee li ul li:hover {
+	font-size: 200%;
+	background: #e74c3c;
+	display: inline;
+	box-shadow: 5px 10px 10px grey;
+	transition-duration: 1s;
+}
