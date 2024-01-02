@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html
+	lang="fr"
+	xmlns:mso="urn:schemas-microsoft-com:office:office"
+	xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Ma page Zoning Correction</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<meta name="description" content="Mon zoning en HTML/CSS" />
+		<meta charset="UTF-8" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+	</head>
+
+	<body>
+		<header>
+			<!--Zone du haut, exp : bannière, logo, slogan ...-->
+			<div id="logo">
+				<a href="#logo">
+					<button type="button">
+						<i class="fas fa-arrow-circle-up"></i>
+					</button>
+				</a>
+				<img src="img/logo.png" alt="logo" />
+			</div>
+
+			<div id="slogan">
+				<h1>Mon premier site en HTML/CSS</h1>
+			</div>
+
+			<div id="social">
+				<a href="https://www.instagram.com" target="_blank">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a href="https://www.facebook.com/" target="_blank">
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+			</div>
+			<div class="clear"></div>
+		</header>
+
+		<nav>
+			<div class="ancreNav">
+				<a href="index.html">Structure</a>
+				<a href="texte.html">Texte</a>
+				<a href="selecteur.html">Selecteur</a>
+				<a href="image.html">Image</a>
+				<a href="position.html">Position</a>
+				<a href="zoning.html">Zoning</a>
+				<a href="tableau.html">Tableau</a>
+				<a href="liste.html">Liste</a>
+			</div>
+		</nav>
+
+		<main>
+			<h2>Listes</h2>
+			<section>
+				<h3>Les listes non-ordonnées - ul</h3>
+				<ul class="fruit">
+					<li><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Orange</li>
+					<li><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Fraise</li>
+					<li><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Poire</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Les listes ordonnées - ol</h3>
+				<ol>
+					<li>Html/Css</li>
+					<li>PHP/SQL</li>
+					<li>JS/JQUERY</li>
+				</ol>
+			</section>
+
+			<section>
+				<h3>Listes imbriquées</h3>
+				<ul class="imbriquee">
+					<li class="europe">
+						Europe
+						<ul>
+							<li>France</li>
+							<li>Italie</li>
+							<li>Espagne</li>
+						</ul>
+					</li>
+					<li class="asie">
+						Asie
+						<ul>
+							<li>Chine</li>
+							<li>Japon</li>
+							<li>Laos</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Listes de définitions</h3>
+				<dl>
+					<dt>F</dt>
+					<dd>Foxtrot</dd>
+					<dd>France</dd>
+					<dd>Food</dd>
+				</dl>
+			</section>
+		</main>
+
+		<footer>
+			<small> &copy; 2020 Le Poles </small>
+		</footer>
+	</body>
+</html>

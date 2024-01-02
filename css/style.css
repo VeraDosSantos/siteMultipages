@@ -1,0 +1,578 @@
+* {
+	box-sizing: border-box;
+}
+html,
+body,
+div,
+small,
+footer {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+header {
+	background: #2c3e50;
+	height: 175px;
+}
+h1 {
+	color: #2980b9;
+	font-size: 45px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: "Anton", sans-serif;
+}
+h2 {
+	font-size: 35px;
+	color: #2c3e50;
+	padding: 20px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #aaa;
+}
+h3 {
+	font-size: 22px;
+	color: #2c3e50;
+	padding: 15px;
+	text-shadow: 1px 1px 2px #aaa;
+}
+#logo {
+	float: left;
+	width: 25%;
+	padding: 15px;
+	text-align: center;
+}
+#slogan {
+	float: left;
+	width: 50%;
+	padding-top: 50px;
+}
+#social {
+	float: left;
+	width: 25%;
+}
+#social i {
+	font-size: 30px;
+	text-align: right;
+	padding: 15px 30px 0 0;
+	display: block;
+}
+header a {
+	color: #2980b9;
+	text-decoration: none;
+}
+button {
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	border: none;
+	background: transparent;
+	font-size: 350%;
+	color: #2d5c7f;
+	cursor: pointer;
+}
+nav {
+	background: #2980b9;
+	height: 70px;
+	border-bottom: 8px solid #6acafc;
+	text-align: center;
+	padding: 15px;
+}
+nav a {
+	margin: 10px;
+	padding: 2px 10px;
+	border-radius: 10px 0px;
+	border: 2px solid white;
+	background: #6acafc;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: oswald;
+	transition: 0.5s;
+}
+nav a:hover {
+	background: #a6d6c3;
+	color: white;
+}
+footer {
+	background: #2980b9;
+	height: 30px;
+	text-align: right;
+	padding: 5px 10px;
+	/* position: fixed; */
+	bottom: 0;
+	width: 100%;
+}
+main {
+	background: rgba(178, 178, 178, 0.3);
+	width: 1000px;
+	margin: 0 auto;
+}
+section {
+	margin-top: 50px;
+	padding: 20px;
+}
+blockquote {
+	font-style: italic;
+	font-size: 120%;
+}
+strong {
+	font-weight: bold;
+}
+.clear {
+	clear: both;
+}
+.select p {
+	color: red;
+}
+.select p:first-of-type,
+.select p:last-of-type {
+	color: pink;
+}
+.select p:nth-of-type(5),
+.select p:nth-of-type(6) {
+	color: black;
+}
+.select div:not(.zoneB) {
+	font-weight: bold;
+}
+.select .zoneA {
+	color: #f56f56;
+}
+.select .zoneB {
+	color: #996633;
+}
+.select .zoneB .couleurBleu {
+	color: blue;
+	font-size: 16px;
+}
+.select #zoneC {
+	color: #98f32f;
+}
+.select #zoneD span {
+	color: #32ff32;
+	font-size: 30px;
+	font-style: italic;
+}
+.imageFond {
+	background: #000 url(../img/fond.jpg) no-repeat;
+	background-size: cover;
+}
+.imageFond p {
+	width: 75%;
+	margin: 100px auto 200px auto;
+	background: rgba(255, 255, 255, 0.6);
+	padding: 20px;
+	font-size: 120%;
+	border-radius: 10px;
+}
+figure {
+	margin: auto;
+	width: 250px;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.678);
+}
+figcaption {
+	color: white;
+	text-align: center;
+	padding: 2px;
+	font-style: oblique;
+}
+.rotationImg {
+	text-align: center;
+}
+.image {
+	margin: 20px;
+	border: 5px solid #eee;
+	/*rgba sera utiliser dans ce cas pour cree une ombre à mon image*/
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+	transition: 1s;
+}
+.image:hover {
+	transform: rotate(-7deg);
+	border: 15px solid #eee;
+}
+.rotation360:hover {
+	transform: rotate(-360deg);
+}
+.centre {
+	margin: 0 auto;
+	width: 500px;
+	height: 200px;
+	background: #33cccc;
+}
+.absolute {
+	position: absolute;
+	top: 24%;
+	left: 10%;
+	background: orange;
+	width: 100px;
+	height: 100px;
+}
+.relative {
+	background: #2d5c7f;
+	width: 400px;
+	height: 400px;
+	position: relative;
+	bottom: 10px;
+	left: 100px;
+}
+.relative div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	background: #fff1a8;
+}
+.trente {
+	width: 30%;
+	padding: 20px;
+	font-size: 22px;
+	background: #3c1b1f;
+	color: #f6e1b5;
+	font-weight: bold;
+}
+.cinquante {
+	width: 50%;
+	padding: 20px;
+	font-size: 22px;
+	background: #b21e4b;
+	color: #e2bf81;
+	font-weight: bold;
+	margin-top: 7px;
+}
+.cent {
+	width: 100%;
+	padding: 20px;
+	font-size: 22px;
+	background: #e2bf81;
+	color: #b21e4b;
+	font-weight: bold;
+	margin-top: 7px;
+}
+.float {
+	height: 170px;
+	width: 170px;
+	margin: 10px;
+	padding-top: 2px;
+	float: left;
+	text-align: center;
+	font-size: 25px;
+	background: #f8d771;
+	border: 2px solid darkred;
+}
+.zone {
+	height: 70px;
+	background: #3a4750;
+}
+.zone1,
+.zone2,
+.zone3,
+.zone4 {
+	height: 250px;
+	width: 25%;
+	float: left;
+}
+.zone1 {
+	background: #2d5c7f;
+}
+.zone2 {
+	background: #fff1a8;
+}
+.zone3 {
+	background: #ff8f56;
+}
+.zone4 {
+	background: #984a59;
+}
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+.flex div {
+	width: 150px;
+	height: 150px;
+	background: darkblue;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	border: 10px outset rgb(51, 51, 255);
+}
+
+.tableau table {
+	border-collapse: collapse;
+	border: 2px solid #6495ed;
+	font-weight: bold;
+	margin: auto;
+	width: 80%;
+}
+.tableau thead,
+.tableau tfoot {
+	background: #d0e3fa;
+	border: 1px solid #6495ed;
+}
+.tableau tbody {
+	border: 1px solid #6495ed;
+}
+.tableau th {
+	border: 1px solid #6495ed;
+	padding: 5px;
+	width: 20%;
+}
+.tableau td {
+	border: 1px solid #6495ed;
+	font-size: 80%;
+	padding: 5px;
+	text-align: center;
+}
+#zoning1 {
+	background: #ffd6d6;
+	width: 800px;
+	text-align: center;
+	text-shadow: 1px 1px 2px darkgrey;
+	margin: auto;
+}
+#zoning1 header {
+	height: 70px;
+	background: #f7f39a;
+}
+#zoning1 aside {
+	height: 525px;
+	float: left;
+	width: 20%;
+	background: #a3de83;
+}
+#zoning1 section {
+	float: left;
+	background: #38817a;
+	height: 525px;
+	width: 80%;
+	margin: 0;
+	padding: 0;
+}
+/**********************Zoning 2 ************************/
+#zoning2 {
+	background: #ffd6d6;
+	width: 500px;
+	text-align: center;
+	text-shadow: 1px 1px 1px darkgrey;
+	margin: auto;
+}
+#zoning2 header {
+	height: 70px;
+	background: #f8f5e4;
+}
+#zoning2 aside {
+	height: 525px;
+	float: left;
+	width: 20%;
+	background: #10828c;
+	color: white;
+}
+#zoning2 .middle {
+	float: left;
+	background: #0e3047;
+	height: 525px;
+	width: 60%;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+/**********************Zoning 3*************************/
+#zoning3 {
+	background: #ffd6d6;
+	width: 800px;
+	text-align: center;
+	text-shadow: 1px 1px 2px darkgrey;
+	color: white;
+	margin: auto;
+}
+#zoning3 section {
+	height: 525px;
+	float: left;
+	width: 50%;
+	background: #205d67;
+	margin: 0;
+	padding: 0;
+}
+#zoning3 section:nth-of-type(2) {
+	background: #639a67;
+}
+#zoning3 footer {
+	height: 70px;
+	width: 100%;
+	background: #d8ebb5;
+	color: black;
+	float: left;
+}
+/**********************Zoning 4************************/
+#zoning4 {
+	background: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 2px darkgrey;
+	border: 2px solid black;
+	margin: auto;
+	width: 700px;
+}
+#zoning4 header {
+	height: 90px;
+	background: #d8dfe2;
+}
+#zoning4 header p {
+	margin: 0%;
+}
+#zoning4 nav {
+	height: 50px;
+	margin: 0;
+	background: #71adb5;
+}
+#zoning4 nav p {
+	margin: 0%;
+}
+#zoning4 section {
+	height: 500px;
+	background: #176d81;
+	margin: 20px;
+	padding: 0;
+}
+#zoning4 footer {
+	height: 75px;
+	background: #0d3446;
+}
+#zoning4 section,
+footer {
+	color: white;
+}
+/**********************Zoning 5*************************/
+#zoning5 {
+	background: orange;
+	text-align: center;
+	text-shadow: 1px 1px 2px darkgrey;
+	border: 2px solid black;
+	margin: 0 auto;
+	font-weight: bolder;
+	color: #fff;
+}
+#zoning5 header {
+	height: 90px;
+	background: #f8d771;
+}
+#zoning5 nav {
+	height: 50px;
+	background: #d6bc6b;
+	border-bottom: 8px solid #c19718;
+}
+#zoning5 .section {
+	margin: 20px;
+	padding: 0;
+}
+#zoning5 .section .z1,
+.z2,
+.z3,
+.z4 {
+	height: 250px;
+	width: 50%;
+	float: left;
+}
+#zoning5 .z1,
+.z4 {
+	background: #d6bc6b;
+}
+#zoning5 .z2,
+.z3 {
+	background: #fce38a;
+}
+#zoning5 footer {
+	height: 75px;
+	background: #f8d771;
+}
+#zoning5 section,
+footer {
+	color: black;
+}
+#zoning5 p {
+	margin: 0%;
+}
+/***********************Zoning 6************************/
+#zoning6 {
+	width: 800px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+#zoning6 header {
+	background: #40a497;
+	height: 180px;
+}
+.haut1 {
+	float: left;
+	width: 25%;
+	height: 100%;
+	background: #203562;
+}
+.haut2 {
+	float: left;
+	width: 50%;
+	height: 100%;
+	background: #3e588f;
+}
+.haut3 {
+	float: left;
+	width: 25%;
+	height: 100%;
+	background: #203562;
+}
+#zoning6 nav {
+	background: #0b5269;
+	height: 30px;
+	border: none;
+}
+#zoning6 aside {
+	background: #446878;
+	width: 20%;
+	height: 650px;
+	float: left;
+}
+#zoning6 section {
+	width: 80%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.slideshow {
+	background: #314a52;
+	height: 250px;
+}
+#zoning6 .a {
+	background: #c0c5cd;
+	width: 50%;
+	height: 250px;
+	float: left;
+}
+#zoning6 .b {
+	background: #203562;
+	width: 50%;
+	height: 250px;
+	float: left;
+}
+#zoning6 .c,
+.e {
+	background: #c0c5cd;
+	width: 25%;
+	height: 150px;
+	float: left;
+}
+#zoning6 .d,
+.f {
+	background: #203562;
+	width: 25%;
+	height: 150px;
+	float: left;
+}
+#zoning6 footer {
+	background: #0b5269;
+	height: 50px;
+	color: white;
+}

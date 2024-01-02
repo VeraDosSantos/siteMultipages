@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html
+	lang="fr"
+	xmlns:mso="urn:schemas-microsoft-com:office:office"
+	xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Ma page Image</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<meta name="description" content="Mes images en HTML/CSS" />
+		<meta charset="UTF-8" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+	</head>
+
+	<body>
+		<header>
+			<div id="logo">
+				<a href="#logo">
+					<button type="button">
+						<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+					</button>
+				</a>
+				<img src="img/logo.png" alt="logo" />
+			</div>
+
+			<div id="slogan">
+				<h1>Mon premier site en HTML/CSS</h1>
+			</div>
+
+			<div id="social">
+				<a href="https://www.instagram.com" target="_blank">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a href="https://www.facebook.com/" target="_blank">
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+			</div>
+
+			<div class="clear"></div>
+		</header>
+
+		<nav>
+			<div class="ancreNav">
+				<a href="index.html">Structure</a>
+				<a href="texte.html">Texte</a>
+				<a href="selecteur.html">Selecteur</a>
+			</div>
+		</nav>
+
+		<main>
+			<h2>Images</h2>
+			<section class="imageFond">
+				<h3>Image de fond en CSS</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+					recusandae iure, laudantium incidunt totam veniam. Error sequi et
+					pariatur, necessitatibus placeat soluta, libero eveniet accusamus,
+					ipsa velit corporis provident labore! Lorem ipsum dolor sit amet,
+					consectetur adipisicing elit. Aliquid quas voluptas nulla, laboriosam
+					voluptate reiciendis commodi vel! Magni nisi, fuga eum asperiores
+					officia commodi laboriosam ea quae iusto esse dolores.
+				</p>
+			</section>
+
+			<section>
+				<h3>Image dans HTML</h3>
+				<figure>
+					<img
+						src="img/toureiffel.jpg"
+						width=""
+						height=""
+						title="Cette photo montre la tour Eiffel de Paris"
+						alt="Cette photo montre la tour Eiffel de Paris"
+					/>
+
+					<figcaption>Une photo de la tour Eiffel</figcaption>
+				</figure>
+			</section>
+
+			<section class="rotationImg">
+				<h3>Image en HTML / CSS</h3>
+				<!-- On peux mettre un commentaire pour faire sauter la marge entre les 2 images le début du com à la suite de la premiere image et la fin du com au début de la deuxieme image -->
+				<img src="img/image.jpg" class="image" alt="" />
+				<img src="img/image.jpg" class="image" alt="" />
+				<img src="img/image.jpg" class="rotation360 image" alt="" />
+			</section>
+		</main>
+		<footer>
+			<small> &copy; 2020 Le PoleS </small>
+		</footer>
+	</body>
+</html>
