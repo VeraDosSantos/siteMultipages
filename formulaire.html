@@ -77,99 +77,69 @@
 				<a href="animations.html">Animations</a>
 			</div>
 		</nav>
-
 		<main>
-			<h2>Liens & menus</h2>
+			<h2>Formulaire</h2>
 
-			<div class="ancre">
-				<a href="#lien">Les liens</a>
-				<a href="#menu">Les menus</a>
-				<a href="#menuDeroulant">Les menus déroulants</a>
-			</div>
-
-			<section id="lien">
-				<h3>Les liens</h3>
-
-				<a
-					href="http://codepen.io"
-					target="_blank"
-					title="Se rendre sur le site de CodePen"
+			<section class="formulaire">
+				<!--Method : maniéres de circulation des données-->
+				<!--Action : url de destination-->
+				<!--Action : permet d'envoyé un fichier correctement ( encodage)-->
+				<form
+					method="post"
+					action="url de destination"
+					enctype="multipart/form-data"
 				>
-					CodePen is a social development environment for front-end designers
-					and developers
-				</a>
-				<br /><!-- voir et télécharger mon cv se font de la même manière mais les navigateurs ne réagissent pas tous de la même manière.-->
-				<a href="files/cv.doc">Télécharger mon CV</a>
-				<br />
-				<a href="files/cv.pdf" target="_blank">Voir mon CV</a>
-				<br />
-				<a href="#" onclick="window.print()">Imprimer la page</a>
-				<br />
-				<p>
-					Cliquez <a href="index.html">ici</a> pour vous rendre à l'accueil.
-				</p>
-			</section>
+					<label for="pseudo">Pseudo *</label>
+					<input type="text" id="pseudo" name="pseudo" required /><br />
 
-			<section id="menu">
-				<h3>Les menus</h3>
+					<label for="prenom">Prénom</label>
+					<input
+						type="text"
+						id="prenom"
+						name="prenom"
+						placeholder="Taper votre prenom"
+					/><br />
 
-				<nav>
-					<ul>
-						<li><a href="#">Accueil</a></li>
-						<li><a href="#">Parcours</a></li>
-						<li><a href="#">Compétences</a></li>
-						<li><a href="#">Réalisation</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-			</section>
+					<label for="mdp">Mot de passe</label>
+					<input type="password" id="mdp" name="mdp" /><br />
 
-			<section id="menuDeroulant">
-				<h3>Les menus déroulant</h3>
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" /><br />
 
-				<nav>
-					<ul class="niveau1">
-						<li>
-							<a href="#">Accueil</a>
-						</li>
+					<label for="cv">CV</label>
+					<input type="file" id="cv" name="cv" /><br />
 
-						<li class="sousMenu">
-							<a href="#">Formation</a>
+					<p>Quel sont vos fruits préférés ?</p>
+					<label for="orange">Orange</label>
+					<input type="checkbox" id="orange" value="orange" checked />
+					<label for="fraise">Fraise</label>
+					<input type="checkbox" id="fraise" value="fraise" />
+					<label for="poire">Poire</label>
+					<input type="checkbox" id="poire" value="poire" /><br />
 
-							<ul class="niveau2">
-								<li><a href="#">Etudiant</a></li>
-								<li><a href="#">Emploi du temps</a></li>
-								<li><a href="#">Recherche d'emploi</a></li>
-								<li><a href="#">Documents</a></li>
-							</ul>
-						</li>
+					<label for="cp">Code postal</label>
+					<input
+						type="text"
+						id="cp"
+						name="cp"
+						maxlength="5"
+						pattern="[0-9]{5}"
+						title="5 chiffres entre 0 et 9"
+					/>
+					<br />
 
-						<li><a href="#">Informations</a></li>
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" cols="25"></textarea
+					><br />
 
-						<li class="sousMenu">
-							<a href="#">Cours</a>
-
-							<ul class="niveau2">
-								<li><a href="#">Internet</a></li>
-								<li><a href="#">HTML / CSS</a></li>
-								<li><a href="#">CMS</a></li>
-								<li><a href="#">Stats</a></li>
-								<li><a href="#">Réseaux sociaux</a></li>
-								<li><a href="#">Référencement</a></li>
-								<li><a href="#">Marketing</a></li>
-								<li><a href="#">Cahier des charges</a></li>
-								<li><a href="#">Photoshop</a></li>
-							</ul>
-						</li>
-
-						<li><a href="#">Mon CV</a></li>
-					</ul>
-				</nav>
+					<input type="submit" name="envoyer" value="Envoyer" />
+					<input type="reset" name="annuler" value="Annuler" />
+				</form>
 			</section>
 		</main>
 
 		<footer>
-			<small> &copy; 2020 Le PoleS </small>
+			<small> &copy; 2020 Le Poles </small>
 		</footer>
 	</body>
 </html>
