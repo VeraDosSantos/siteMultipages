@@ -584,11 +584,11 @@ ul.fruit li {
 	display: inline;
 	margin: 15px;
 }
-li .fa {
+li .fa-regular {
 	font-size: 90%;
 	color: blue;
 }
-li .fa:hover {
+li .fa-regular:hover {
 	font-size: 150%;
 	color: darkred;
 }

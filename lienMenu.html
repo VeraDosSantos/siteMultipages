@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--Permet de définir le langage utilisé et la langue -->
+<html
+	lang="fr"
+	xmlns:mso="urn:schemas-microsoft-com:office:office"
+	xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+	<!--Permet d'indiquer la langue de la page-->
+
+	<head>
+		<!--Tête du document, non visible sur le site-->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Ma page structure</title>
+		<!--Titre du site apparaissant  par exemple sur une recherche google-->
+		<link rel="stylesheet" href="css/style.css" />
+		<!--Reliez le fichier html au fichier CSS(Cascading Style Sheets)-->
+		<link
+			href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald"
+			rel="stylesheet"
+		/>
+		<!--Lien pour les polices utilisé via "Google-Font"-->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<!--Lien pour le "Font-Awesome" récupéré sur site dans "Get Started"-->
+		<meta name="description" content="Ma première page en HTML/CSS" />
+		<!--Description sous le titre dans la recherche google, Les moteurs de recherches s'en servent un peu comme des mots clefs pour les recherchers-->
+		<meta charset="UTF-8" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<!-- Corps du document -->
+
+		<header>
+			<!--Zone du haut, ex: bannières, slogan, logo ... -->
+			<div id="logo">
+				<a href="#logo">
+					<button type="button">
+						<i class="fas fa-arrow-circle-up"></i>
+					</button>
+				</a>
+				<img src="img/logo.png" alt="logo HTML CSS" />
+			</div>
+
+			<div id="slogan">
+				<h1>Mon premier site en HTML/CSS</h1>
+			</div>
+
+			<div id="social">
+				<a href="http://www.instagram.com" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="http://www.facebook.com" target="_blank">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</div>
+
+			<div class="clear"></div>
+		</header>
+
+		<nav>
+			<!-- Zone de menu, les liens pour naviguer sur le site -->
+			<div class="ancreNav">
+				<a href="index.html">Structure</a>
+				<a href="textes.html">Textes</a>
+				<a href="selecteurs.html">Selecteurs</a>
+				<a href="images.html">Images</a>
+				<a href="positions.html">Positions</a>
+				<a href="zoning.html">Zoning</a>
+				<a href="tableaux.html">Tableaux</a>
+				<a href="listes.html">Listes</a>
+				<a href="liens_menu.html" class="activ">Liens & menu</a>
+				<a href="formulaire.html">Formulaires</a>
+				<a href="multimedias.html">Multimedias</a>
+				<a href="animations.html">Animations</a>
+			</div>
+		</nav>
+
+		<main>
+			<h2>Liens & menus</h2>
+
+			<div class="ancre">
+				<a href="#lien">Les liens</a>
+				<a href="#menu">Les menus</a>
+				<a href="#menuDeroulant">Les menus déroulants</a>
+			</div>
+
+			<section id="lien">
+				<h3>Les liens</h3>
+
+				<a
+					href="http://codepen.io"
+					target="_blank"
+					title="Se rendre sur le site de CodePen"
+				>
+					CodePen is a social development environment for front-end designers
+					and developers
+				</a>
+				<br /><!-- voir et télécharger mon cv se font de la même manière mais les navigateurs ne réagissent pas tous de la même manière.-->
+				<a href="files/cv.doc">Télécharger mon CV</a>
+				<br />
+				<a href="files/cv.pdf" target="_blank">Voir mon CV</a>
+				<br />
+				<a href="#" onclick="window.print()">Imprimer la page</a>
+				<br />
+				<p>
+					Cliquez <a href="index.html">ici</a> pour vous rendre à l'accueil.
+				</p>
+			</section>
+
+			<section id="menu">
+				<h3>Les menus</h3>
+
+				<nav>
+					<ul>
+						<li><a href="#">Accueil</a></li>
+						<li><a href="#">Parcours</a></li>
+						<li><a href="#">Compétences</a></li>
+						<li><a href="#">Réalisation</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</section>
+
+			<section id="menuDeroulant">
+				<h3>Les menus déroulant</h3>
+
+				<nav>
+					<ul class="niveau1">
+						<li>
+							<a href="#">Accueil</a>
+						</li>
+
+						<li class="sousMenu">
+							<a href="#">Formation</a>
+
+							<ul class="niveau2">
+								<li><a href="#">Etudiant</a></li>
+								<li><a href="#">Emploi du temps</a></li>
+								<li><a href="#">Recherche d'emploi</a></li>
+								<li><a href="#">Documents</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">Informations</a></li>
+
+						<li class="sousMenu">
+							<a href="#">Cours</a>
+
+							<ul class="niveau2">
+								<li><a href="#">Internet</a></li>
+								<li><a href="#">HTML / CSS</a></li>
+								<li><a href="#">CMS</a></li>
+								<li><a href="#">Stats</a></li>
+								<li><a href="#">Réseaux sociaux</a></li>
+								<li><a href="#">Référencement</a></li>
+								<li><a href="#">Marketing</a></li>
+								<li><a href="#">Cahier des charges</a></li>
+								<li><a href="#">Photoshop</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">Mon CV</a></li>
+					</ul>
+				</nav>
+			</section>
+		</main>
+
+		<footer>
+			<small> &copy; 2020 Le PoleS </small>
+		</footer>
+	</body>
+</html>
