@@ -706,3 +706,25 @@ li .fa-regular:hover {
 	display: block;
 }
 /****************FIN LIEN & MENU******************/
+/***************FORMULAIRE*******************/
+form {
+	width: 60%;
+	background: #2c3e50;
+	margin: 0 auto;
+	padding: 20px;
+	color: #ecf0f1;
+	border-radius: 15px;
+}
+label {
+	margin: 10px 0;
+	width: 50%;
+	display: inline-block;
+}
+textarea {
+	resize: none;
+}
+label[for="orange"],
+label[for="fraise"],
+label[for="poire"] {
+	width: 13%;
+}
